@@ -33,7 +33,7 @@ public class PqlProcessor extends AbstractProcessor {
         Method[] declaredMethods = processingEnv.getClass().getDeclaredMethods();
         Context context  = null;
         for (Method declaredMethod : declaredMethods) {
-            if (declaredMethod.getName().equals("getContext")) {
+            if ("getContext".equals(declaredMethod.getName())) {
                 try {
                     context = (Context) declaredMethod.invoke(processingEnv, null);
                 } catch (IllegalAccessException | InvocationTargetException e) {
@@ -46,6 +46,7 @@ public class PqlProcessor extends AbstractProcessor {
         this.names = Names.instance(context);
     }
 
+    @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
         Set<? extends Element> rootElements = roundEnvironment.getElementsAnnotatedWith(PqlTest.class);
         for (Element rootElement : rootElements) {
@@ -54,13 +55,9 @@ public class PqlProcessor extends AbstractProcessor {
                 @Override
                 public void visitClassDef(JCTree.JCClassDecl jcClassDecl) {
                     jcClassDecl.defs.stream()
-                            // 过滤，只处理变量类型
                             .filter(it -> it.getKind().equals(Tree.Kind.VARIABLE))
-                            // 类型强转
                             .map(it -> (JCTree.JCVariableDecl) it)
                             .forEach(it -> {
-
-                                // 添加get方法
                                 jcClassDecl.defs = jcClassDecl.defs.prepend(genGetterMethod(it));
                             });
 
@@ -78,7 +75,7 @@ public class PqlProcessor extends AbstractProcessor {
         JCTree.JCReturn returnStatement = treeMaker.Return(
                 treeMaker.Conditional(
                         treeMaker.Binary(JCTree.Tag.NE, treeMaker.Select(treeMaker.Ident(names.fromString("this")), jcVariableDecl.getName()), treeMaker.Literal(TypeTag.BOT, 0)),
-                        treeMaker.Apply(List.nil(), treeMaker.Select(treeMaker.Ident(names.fromString("pql")), names.fromString("getDesc")), List.nil()),
+                        treeMaker.Apply(List.nil(), treeMaker.Select(treeMaker.Ident(jcVariableDecl.getName()), names.fromString("getDesc")), List.nil()),
                         treeMaker.Literal("")
                 )
         );
@@ -129,10 +126,12 @@ public class PqlProcessor extends AbstractProcessor {
 
     }
 
+    @Override
     public Set<String> getSupportedAnnotationTypes() {
         return Set.of(PqlTest.class.getCanonicalName());
     }
 
+    @Override
     public SourceVersion getSupportedSourceVersion() {
 
         return SourceVersion.RELEASE_11;

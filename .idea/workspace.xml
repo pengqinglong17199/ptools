@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe723ec-9997-4267-87f1-785a7f3cbc6a" name="Default Changelist" comment="" />
+    <list default="true" id="abe723ec-9997-4267-87f1-785a7f3cbc6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/PqlProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/PqlProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/com/pql/ptools/commons/PqlProcessor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/classes/com/pql/ptools/commons/PqlProcessor$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/com/pql/ptools/commons/PqlProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/classes/com/pql/ptools/commons/PqlProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/ptools-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/ptools-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/target/test-classes/META-INF/jpms.args" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-context/target/classes/com/pql/ptools/context/entity/PqlEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/classes/com/pql/ptools/context/entity/PqlEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-context/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-context/target/ptools-context-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/ptools-context-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,10 +41,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
@@ -27,13 +54,16 @@
   <component name="ProjectId" id="28ZTCqGcKG3tysenn0fBV74HiiK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -45,7 +75,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\ptools\ptools-commons\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Remote.Unnamed">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pql.ptools.Main" />
       <module name="ptools" />
@@ -88,7 +118,7 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.PqlEntity" />
-      <item itemvalue="Remote.Unnamed" />
+      <item itemvalue="Remote JVM Debug.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -97,6 +127,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -112,11 +143,23 @@
       <workItem from="1651459166871" duration="4924000" />
       <workItem from="1651465920572" duration="15121000" />
       <workItem from="1651541627921" duration="749000" />
+      <workItem from="1651889301522" duration="700000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="177" key="#Project_Structure" timestamp="1651489659680">
@@ -197,12 +240,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/PqlProcessor.java</url>
-          <line>86</line>
+          <line>83</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/PqlProcessor.java</url>
-          <line>79</line>
+          <line>76</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
