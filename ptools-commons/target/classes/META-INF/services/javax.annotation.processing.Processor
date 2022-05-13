@@ -1,1 +1,1 @@
-com.pql.ptools.commons.PqlProcessor
+com.pql.ptools.commons.lombok.processor.EnumDescProcessor

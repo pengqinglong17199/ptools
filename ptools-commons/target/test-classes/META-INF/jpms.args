@@ -1,4 +1,0 @@
---patch-module
-jdk.javadoc=_
---add-reads
-jdk.javadoc=ALL-UNNAMED
