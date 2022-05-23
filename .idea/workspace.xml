@@ -4,36 +4,27 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe723ec-9997-4267-87f1-785a7f3cbc6a" name="Default Changelist" comment="add:修改写死的变量名">
-      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/annotations/EnumDesc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/constants/EnumConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AgentProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/EnumDescProcessor.java" afterDir="false" />
+    <list default="true" id="abe723ec-9997-4267-87f1-785a7f3cbc6a" name="Default Changelist" comment="add:初版完善">
+      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AnnotationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/skip/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/resources/META-INF/services/kfang.agent.Processors" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/PqlProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/PqlTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/constants/EnumConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/constants/EnumConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AgentProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AgentProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/resources/META-INF/services/javax.annotation.processing.Processor" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/resources/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/META-INF/services/javax.annotation.processing.Processor" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/classes/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/com/pql/ptools/commons/PqlProcessor$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/com/pql/ptools/commons/PqlProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/com/pql/ptools/commons/PqlTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/classes/module-info.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-commons/target/ptools-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/ptools-commons-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/test-classes/META-INF/jpms.args" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-context/src/main/java/com/pql/ptools/context/entity/PqlEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/src/main/java/com/pql/ptools/context/entity/PqlEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/src/main/java/com/pql/ptools/context/enums/PqlEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/src/main/java/com/pql/ptools/context/enums/PqlEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/target/classes/com/pql/ptools/context/entity/PqlEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/target/classes/com/pql/ptools/context/enums/PqlEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/target/ptools-context-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-context/target/classes/com/pql/ptools/context/entity/PqlEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/classes/com/pql/ptools/context/entity/PqlEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +35,24 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="module-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -70,22 +72,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ptools-context/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ptools-context/src/main/java" />
       <recent name="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ptools-commons/src/main/resources/META-INF/services" />
       <recent name="C:\Users\Administrator\IdeaProjects\ptools\ptools-commons\src\main\resources\META-INF" />
       <recent name="C:\Users\Administrator\IdeaProjects\ptools\ptools-commons\src\main\resources" />
     </key>
@@ -94,7 +98,20 @@
       <recent name="com.pql.ptools.commons.lombok" />
     </key>
   </component>
-  <component name="RunManager" selected="Remote JVM Debug.Unnamed">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pql.ptools.commons.lombok.Main" />
+      <module name="ptools-commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pql.ptools.commons.lombok.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pql.ptools.Main" />
       <module name="ptools" />
@@ -121,16 +138,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ptools-commons [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/ptools-commons" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="ptools-context [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/ptools-context" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -149,9 +205,13 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.PqlEntity" />
       <item itemvalue="Remote JVM Debug.Unnamed" />
+      <item itemvalue="Maven.ptools-commons [install]" />
+      <item itemvalue="Maven.ptools-context [install]" />
+      <item itemvalue="Application.Main (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.PqlEntity" />
         <item itemvalue="Application.Main" />
       </list>
@@ -178,7 +238,9 @@
       <workItem from="1652261087570" duration="5636000" />
       <workItem from="1652340238503" duration="225000" />
       <workItem from="1652363570108" duration="61000" />
-      <workItem from="1652436087602" duration="1108000" />
+      <workItem from="1652436087602" duration="2750000" />
+      <workItem from="1652667939134" duration="634000" />
+      <workItem from="1653028888918" duration="30254000" />
     </task>
     <task id="LOCAL-00001" summary="add:修改写死的变量名">
       <created>1651890202888</created>
@@ -187,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651890202889</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add:初版完善">
+      <created>1652437245741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652437245741</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,11 +272,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add:修改写死的变量名" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:修改写死的变量名" />
+    <MESSAGE value="add:初版完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:初版完善" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -218,11 +287,41 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib/src.zip!/jdk.compiler/com/sun/tools/javac/processing/JavacProcessingEnvironment.java</url>
+          <line>515</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.24/lombok-1.18.24-sources.jar!/lombok/core/AnnotationProcessor.java</url>
+          <line>234</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/EnumDescProcessor.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="25" />
+          <line>55</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Module.java</url>
+          <line>779</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AnnotationProcessor.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AnnotationProcessor.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="126" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="roots" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

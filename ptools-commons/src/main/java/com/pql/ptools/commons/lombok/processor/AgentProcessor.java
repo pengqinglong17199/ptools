@@ -1,15 +1,18 @@
 package com.pql.ptools.commons.lombok.processor;
 
+import com.pql.ptools.commons.lombok.skip.Parent;
 import com.sun.tools.javac.api.JavacTrees;
 import com.sun.tools.javac.code.Type;
 import com.sun.tools.javac.tree.JCTree;
 import com.sun.tools.javac.tree.TreeMaker;
 import com.sun.tools.javac.util.Context;
 import com.sun.tools.javac.util.Names;
+import sun.misc.Unsafe;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.lang.model.SourceVersion;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
@@ -106,4 +109,76 @@ public abstract class AgentProcessor extends AbstractProcessor {
         return suffix;
     }
 
+    public static void addOpensForAgent() {
+        Class<?> cModule;
+            try {
+            cModule = Class.forName("java.lang.Module");
+        } catch (ClassNotFoundException e) {
+            return;
+        }
+        Unsafe unsafe = getUnsafe();
+        Object jdkCompilerModule = getJdkCompilerModule();
+        Module ownModule = AgentProcessor.class.getModule();
+        String[] allPkgs = {
+                "com.sun.tools.javac.code",
+                "com.sun.tools.javac.comp",
+                "com.sun.tools.javac.file",
+                "com.sun.tools.javac.main",
+                "com.sun.tools.javac.model",
+                "com.sun.tools.javac.parser",
+                "com.sun.tools.javac.processing",
+                "com.sun.tools.javac.tree",
+                "com.sun.tools.javac.util",
+                "com.sun.tools.javac.jvm",
+                "com.sun.tools.javac.api"
+        };
+
+        try {
+            Method m = cModule.getDeclaredMethod("implAddOpens", String.class, cModule);
+            long firstFieldOffset = getFirstFieldOffset(unsafe);
+            unsafe.putBooleanVolatile(m, firstFieldOffset, true);
+            for (String p : allPkgs){
+                m.invoke(jdkCompilerModule, p, ownModule);
+            }
+        } catch (Exception ignore) {
+            System.out.println(1);
+        }
+    }
+
+    private static long getFirstFieldOffset(Unsafe unsafe) {
+        try {
+            return unsafe.objectFieldOffset(Parent.class.getDeclaredField("first"));
+        } catch (NoSuchFieldException e) {
+            // can't happen.
+            throw new RuntimeException(e);
+        } catch (SecurityException e) {
+            // can't happen
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static Unsafe getUnsafe() {
+        try {
+            Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
+            theUnsafe.setAccessible(true);
+            return (Unsafe) theUnsafe.get(null);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    public static Object getJdkCompilerModule() {
+
+        try {
+            Class<?> cModuleLayer = Class.forName("java.lang.ModuleLayer");
+            Method mBoot = cModuleLayer.getDeclaredMethod("boot");
+            Object bootLayer = mBoot.invoke(null);
+            Class<?> cOptional = Class.forName("java.util.Optional");
+            Method mFindModule = cModuleLayer.getDeclaredMethod("findModule", String.class);
+            Object oCompilerO = mFindModule.invoke(bootLayer, "jdk.compiler");
+            return cOptional.getDeclaredMethod("get").invoke(oCompilerO);
+        } catch (Exception e) {
+            return null;
+        }
+    }
 }

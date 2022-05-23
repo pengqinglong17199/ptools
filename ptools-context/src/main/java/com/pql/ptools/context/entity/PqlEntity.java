@@ -1,3 +1,4 @@
+
 package com.pql.ptools.context.entity;
 
 import com.pql.ptools.commons.lombok.annotations.EnumDesc;
@@ -13,3 +14,4 @@ public class PqlEntity {
     private PqlEnum field2;
 
 }
+
