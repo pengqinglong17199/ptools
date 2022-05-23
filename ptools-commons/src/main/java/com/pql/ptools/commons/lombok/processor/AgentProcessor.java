@@ -113,6 +113,9 @@ public abstract class AgentProcessor extends AbstractProcessor {
         return suffix;
     }
 
+    /**
+     * 添加commons模块对jdk.compiler的引用
+     */
     public static void addOpensForAgent() {
         Class<?> cModule;
             try {
@@ -139,9 +142,12 @@ public abstract class AgentProcessor extends AbstractProcessor {
 
         try {
             Method m = cModule.getDeclaredMethod("implAddOpens", String.class, cModule);
+            // 获取方法的权限字段所在的内存偏移量
             long firstFieldOffset = getFirstFieldOffset(unsafe);
+            // 通过unsafe对内存进行操作 修改内存
             unsafe.putBooleanVolatile(m, firstFieldOffset, true);
             for (String p : allPkgs){
+                // 添加当前包的依赖
                 m.invoke(jdkCompilerModule, p, ownModule);
             }
         } catch (Exception ignore) {
@@ -171,6 +177,10 @@ public abstract class AgentProcessor extends AbstractProcessor {
         }
     }
 
+    /**
+     * 获取jdk.compiler的模块对象
+     * @return
+     */
     public static Object getJdkCompilerModule() {
 
         try {
