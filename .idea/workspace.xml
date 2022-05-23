@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe723ec-9997-4267-87f1-785a7f3cbc6a" name="Default Changelist" comment="add:初版完善">
-      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AnnotationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/skip/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptools-commons/src/main/resources/META-INF/services/kfang.agent.Processors" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/constants/EnumConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/constants/EnumConstants.java" afterDir="false" />
+    <list default="true" id="abe723ec-9997-4267-87f1-785a7f3cbc6a" name="Default Changelist" comment="add:增加对jdk17的支持">
       <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AgentProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/processor/AgentProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/skip/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/com/pql/ptools/commons/lombok/parent/Parent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/src/main/resources/META-INF/services/javax.annotation.processing.Processor" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/src/main/resources/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/META-INF/services/javax.annotation.processing.Processor" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/classes/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-commons/target/ptools-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-commons/target/ptools-commons-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/src/main/java/com/pql/ptools/context/entity/PqlEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/src/main/java/com/pql/ptools/context/entity/PqlEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ptools-context/target/classes/com/pql/ptools/context/entity/PqlEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/ptools-context/target/classes/com/pql/ptools/context/entity/PqlEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +223,7 @@
       <workItem from="1652363570108" duration="61000" />
       <workItem from="1652436087602" duration="2750000" />
       <workItem from="1652667939134" duration="634000" />
-      <workItem from="1653028888918" duration="30254000" />
+      <workItem from="1653028888918" duration="30586000" />
     </task>
     <task id="LOCAL-00001" summary="add:修改写死的变量名">
       <created>1651890202888</created>
@@ -256,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652437245741</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add:增加对jdk17的支持">
+      <created>1653296762213</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653296762213</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +266,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add:修改写死的变量名" />
     <MESSAGE value="add:初版完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:初版完善" />
+    <MESSAGE value="add:增加对jdk17的支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:增加对jdk17的支持" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

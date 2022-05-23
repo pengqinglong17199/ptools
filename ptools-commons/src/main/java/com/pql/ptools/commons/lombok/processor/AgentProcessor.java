@@ -1,6 +1,7 @@
 package com.pql.ptools.commons.lombok.processor;
 
-import com.pql.ptools.commons.lombok.skip.Parent;
+import com.pql.ptools.commons.lombok.constants.EnumConstants;
+import com.pql.ptools.commons.lombok.parent.Parent;
 import com.sun.tools.javac.api.JavacTrees;
 import com.sun.tools.javac.code.Type;
 import com.sun.tools.javac.tree.JCTree;
@@ -50,11 +51,14 @@ public abstract class AgentProcessor extends AbstractProcessor {
     }
 
     /**
-     * jdk版本11
+     * jdk版本17
      */
     @Override
     public SourceVersion getSupportedSourceVersion() {
-        return SourceVersion.RELEASE_11;
+        if (EnumConstants.version == 17) {
+            return SourceVersion.valueOf("RELEASE_17");
+        }
+        return SourceVersion.valueOf("RELEASE_11");
     }
 
     /**
